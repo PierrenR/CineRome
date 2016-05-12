@@ -3,13 +3,13 @@ package com.demos.cine.model;
 public class Article {
 
 	private String reference ;
-	private double prixHT ;
+	private Prix prixHT ;
 	private String designation ;
 	private int qteStcock ;
 	
 	
 	
-	public Article(String reference, double prixHT, String designation, int qteStcock) {
+	public Article(String reference, Prix prixHT, String designation, int qteStcock) {
 		
 		this.reference = reference;
 		this.prixHT = prixHT;
@@ -20,11 +20,11 @@ public class Article {
 
 
 	public double getPrixHT() {
-		return prixHT;
+		return prixHT.getPrix();
 	}
 
 
-	public void setPrixHT(double prixHT) {
+	public void setPrixHT(Prix prixHT) {
 		this.prixHT = prixHT;
 	}
 
