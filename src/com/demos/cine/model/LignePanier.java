@@ -1,32 +1,19 @@
 package com.demos.cine.model;
 
 public class LignePanier {
-
-	
-	private Article article ; 
-	private int quantite ;
-	
-	
-	
-	
-	public LignePanier(Article article, int quantite) {
-		
-		this.article = article;
-		this.quantite = quantite;
+	private Article art;
+	private int qte;
+	public LignePanier(Article art, int qte) {
+		super();
+		this.art = art;
+		this.qte = qte;
 	}
-	
-	
-	
-	
-	public Article getArticle() {
-		return article;
+	public Article getArt() {
+		return art;
 	}
-	public int getQuantite() {
-		return quantite;
+	public int getQte() {
+		return qte;
 	}
-	
-	
-	
 	
 	
 }

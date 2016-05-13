@@ -11,34 +11,14 @@ public class PP {
 		
 		
 		
-		Article a1 = new Article ( "aaa",  10.5,  "TV",  45) ; 
-		Article b1 = new Article ( "bbb",  10,  "ordinateur",  3) ; 
-		
-		
-		
-		Panier myPanier = new Panier() ;
-		
-		myPanier.ajouterArticle(a1, 2) ;
-		myPanier.ajouterArticle(b1, 3) ;
-		
-		
-		
-		double prixT = myPanier.getPrixTotalHT () ;
-		System.out.println("le prix total de mon panier est : "+prixT);
-		
-		
-		
-		int nbE = myPanier.getNbElements () ;
-		System.out.println("le nb d'élements de mon panier est : "+nbE);
-		
-		
-		System.out.println("---------------------");
-		System.out.println("-------affichage du panier--------------");
-		
-		
-		myPanier.AfficherPanier () ;
-		
-		
+		Panier pa = new Panier();
+		Article art1 = new Article("12345", "La vie de Coppola", 12.5, 9);
+		Article art2 = new Article("12346", "Le parrain", 8.5);
+		pa.ajouter(art1, 3);
+		pa.ajouter(art2, 1);
+		System.out.println(art2);
+		System.out.println(pa);
+		System.out.println(pa.getPrixTotalHT());
 		
 		
 		
